@@ -1,0 +1,1 @@
+Para subir esse projeto é necessário subir um banco mySql local, schema = exemplo.
