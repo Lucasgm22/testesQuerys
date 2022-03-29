@@ -15,6 +15,7 @@ public class TransactionTestService {
 
     @Transactional(propagation = Propagation.REQUIRES_NEW)
     public void call1() throws Exception {
+        personRepository.save(new Person("Lucas", "Miranda", "123"));
         personRepository.save(null);
         System.err.println("call1: " + personRepository.findAll());
     }
